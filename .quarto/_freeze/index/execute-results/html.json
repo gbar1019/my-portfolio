@@ -1,0 +1,15 @@
+{
+  "hash": "a59973052df7ab3604c7f44fe8dcb4c4",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"About me\"\n---\n\n\n# Hobbies\n\n## Investing Enthusiast\nI love keeping up with articles and trends about investing, I manage family and friends' money under an account that has allowed me to develop a keen eye for market trends and investment opportunities beating the market.\n\n## Market Predictions and Events\nI regularly analyze market data to make predictions about future market movements and significant events. Below are some of my recent predictions and their outcomes:\n\n### Recent Market Predictions\n#### For Month of July\n- **Prediction**: The tech sector will experience a significant correction due to overvaluation but will come back due to automation and wage increases for cost saving efforts.\n  - **Outcome**: The NASDAQ index dropped by 10% over the next three months, but it will make up for the loss due to cost svaing efforts through AI, automation, and robots.\n\n- **Prediction**: Tesla still has a 100% gain to make by the end of 2024\n  - **Outcome**: Cybertruck, Semi Trucks, Energy Storage, Sportster, Robotaxi, teslabot, and AI advances will be valued into it's evaluation model.\n\n- **Prediction**: Dutch Bros will over take Starbucks in the USA Market and will surpass it's stock price by the end of 2025.\n  - **Outcome**: Dutch Bros expansion, innovation, and rapid store openings will make the company the new face of coffee.\n\n---\n\n::: {.cell}\n\n```{.r .cell-code}\n#About me\n```\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

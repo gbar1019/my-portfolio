@@ -1,0 +1,240 @@
+[
+  {
+    "objectID": "work_samples.html",
+    "href": "work_samples.html",
+    "title": "Work Samples",
+    "section": "",
+    "text": "View Full Report\n\n\nThis project involved analyzing marketing data to identify key trends and insights for Wayfair. The full report is available to view in PDF format above\nDownload Project 1 Report (PDF)"
+  },
+  {
+    "objectID": "work_samples.html#project-1-wayfair-seo-analysis",
+    "href": "work_samples.html#project-1-wayfair-seo-analysis",
+    "title": "Work Samples",
+    "section": "",
+    "text": "View Full Report\n\n\nThis project involved analyzing marketing data to identify key trends and insights for Wayfair. The full report is available to view in PDF format above\nDownload Project 1 Report (PDF)"
+  },
+  {
+    "objectID": "work_samples.html#project-2-data-science",
+    "href": "work_samples.html#project-2-data-science",
+    "title": "Work Samples",
+    "section": "Project 2: Data Science",
+    "text": "Project 2: Data Science\nView Report\n\nDescription\nRstudio is a one of the most powerful statistical programming for calculating and plotting big data sets. Our project is about examining how work hours, study hours, and if taking Economics in high school affected college stduent’s GPA in their first semester.The full report is available to view in R format above\nDownload Project 1 Rscript (Rmd)"
+  },
+  {
+    "objectID": "work_samples.html#project-3-data-science-project-in-progress",
+    "href": "work_samples.html#project-3-data-science-project-in-progress",
+    "title": "Work Samples",
+    "section": "Project 3: DATA SCIENCE PROJECT IN PROGRESS",
+    "text": "Project 3: DATA SCIENCE PROJECT IN PROGRESS"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "About me",
+    "section": "",
+    "text": "I love keeping up with Economics, Social Media Trends, Machine learning, and Innovation. Learning and Development is the foundation of my personal and professional life, I believe taking on continuous learning and new endeavors fuels an exciting career and life!\nI have been very lucky and grateful to be exposed to various industries in my Personal and Professional career, learning as much as I can along the way."
+  },
+  {
+    "objectID": "index.html#automotive-industrial-refinish",
+    "href": "index.html#automotive-industrial-refinish",
+    "title": "About me",
+    "section": "Automotive & Industrial Refinish",
+    "text": "Automotive & Industrial Refinish\nGrowing up I always went to work with my father for as long as I can remember. As soon as I got my driving permit my father will have me as a chauffeur going to at least 7 body shops in LA every day on the summer 2018. He is Senior Account Manager and I got to see my father interact with Body Shop owners and saw how Body Shop owners ran their businesses each more differently than the next. Different people meant different cultures, needs, and ways they run there business.\nMy father’s relationships with his customers were more personal than professional, there I realized sales is more than just products and services but going the extra mile to keep a person’s business. In this the people business is the side of the business that not everyone comprehends unless they are going that extra mile for there clients. He was always proactive and going the extra mile for new and current business, these are the values I stuck with and has helped me beyond my personal and professional career.\nWhat I learned with him was how to build relationships, maintaining relationships, going the extra mile, and people.\nI met so many Body Shop owners during this time and have close relationships with some since they saw me as a child. I actually worked at a family friend’s shop, Bellwood Auto Body, in Bell Gardens for 1 Month in the Summer 2019.\n\n\n\nBellwood Auto Body, Bell Gardens"
+  },
+  {
+    "objectID": "Econ_Math_Project_IBM6510 (2).html",
+    "href": "Econ_Math_Project_IBM6510 (2).html",
+    "title": "IBM 6510 Project",
+    "section": "",
+    "text": "1. What is your research question?\nIn the project, the question we are examining is how does work hours, study hours, if taking calculus and economics (in high school), and quiz scores affect the college student’s overall course score in economics.\n2. What is your dependent variable which are candidates for independent variables?\nOur dependent variable is the student’s course score (score). Our independent variables are: hours worked per week (work), hours studying per week (study), if economics was taken in high school (econhs), if calculus was taken in high school (calculus), and math quiz score (mathscr).\n3. Why do you think the independent variables are correlated with the independent variables?In which direction (positive or negative do you expect the independent variables to influence the dependent variables?\nFor students working more hours, it will negatively affect the student’s course score because they are working more than they are studying.\nFor students studying more, it will positively affect the student’s course score because they are putting in more hours to study the material.\nIf economics and calculus were taken in high school, it will positively increase the student’s course score because they have previous knowledge on the class material.\nThe math quiz score will positively increase the student’s course score because the math quiz contributes to their overall score."
+  },
+  {
+    "objectID": "Econ_Math_Project_IBM6510 (2).html#define-the-data",
+    "href": "Econ_Math_Project_IBM6510 (2).html#define-the-data",
+    "title": "IBM 6510 Project",
+    "section": "Define the Data",
+    "text": "Define the Data\nDescribe the data you are using with an exact link to the source where you got the data. You can use datasets that were not used in class and not used by other students.\nThe data set we are using for this project is in the woolridge package called econmath. This data set came from the Michigan State University Department of Economics from Professor Charles Ballard.The data frame contains 856 observations and 17 variables.\n\nlibrary(wooldridge)\nlibrary(dplyr)\n\n\nAttaching package: 'dplyr'\n\n\nThe following objects are masked from 'package:stats':\n\n    filter, lag\n\n\nThe following objects are masked from 'package:base':\n\n    intersect, setdiff, setequal, union\n\nlibrary(janitor)\n\n\nAttaching package: 'janitor'\n\n\nThe following objects are masked from 'package:stats':\n\n    chisq.test, fisher.test\n\nlibrary(tidymodels)\n\n── Attaching packages ────────────────────────────────────── tidymodels 1.1.1 ──\n\n\n✔ broom        1.0.5     ✔ rsample      1.2.0\n✔ dials        1.2.0     ✔ tibble       3.2.1\n✔ ggplot2      3.4.3     ✔ tidyr        1.3.0\n✔ infer        1.0.5     ✔ tune         1.1.2\n✔ modeldata    1.2.0     ✔ workflows    1.1.3\n✔ parsnip      1.1.1     ✔ workflowsets 1.0.1\n✔ purrr        1.0.2     ✔ yardstick    1.2.0\n✔ recipes      1.0.8     \n\n\nWarning: package 'scales' was built under R version 4.3.2\n\n\nWarning: package 'recipes' was built under R version 4.3.2\n\n\n── Conflicts ───────────────────────────────────────── tidymodels_conflicts() ──\n✖ purrr::discard() masks scales::discard()\n✖ dplyr::filter()  masks stats::filter()\n✖ dplyr::lag()     masks stats::lag()\n✖ recipes::step()  masks stats::step()\n• Use tidymodels_prefer() to resolve common conflicts.\n\nDataeconmath=econmath\n\n### Choosing our Dependent variable & Independent variables\nDataeconmath=econmath %&gt;% \n  clean_names(\"upper_camel\") %&gt;% \n  select(course_score=Score,hours_worked=Work,hours_studied=Study,math_quiz_score=Mathscr,calc=Calculus,Econhs,\n         )\n\nThe data is behind a cengage paywall, https://www.cengage.com/c/introductory-econometrics-a-modern-approach-6e-wooldridge/, however you can find econmath on page 51 on the wooldridge package. https://cran.r-project.org/web/packages/wooldridge/wooldridge.pdf"
+  },
+  {
+    "objectID": "Econ_Math_Project_IBM6510 (2).html#clean-data",
+    "href": "Econ_Math_Project_IBM6510 (2).html#clean-data",
+    "title": "IBM 6510 Project",
+    "section": "1. Clean Data",
+    "text": "1. Clean Data\n\n###Cleaning Data\nsum(is.na(Dataeconmath))\n\n[1] 0\n\ncat(\"There is amount of missing values:\",sum(is.na(Dataeconmath)))\n\nThere is amount of missing values: 0\n\n### Remove Duplicate\nDataeconmath=unique(Dataeconmath)\n\n### Remove Outliers\nnumeric_columns=sapply(Dataeconmath, is.numeric)\nDataEconMath_numeric=Dataeconmath[, numeric_columns]\nq1_score=quantile(DataEconMath_numeric$course_score, 0.25)\nq3_score=quantile(DataEconMath_numeric$course_score, 0.75)\niqr_score=q3_score - q1_score\noutlier_threshold_score &lt;- 1.5\noutliers_score &lt;- (Dataeconmath$course_score &lt; (q1_score - outlier_threshold_score * iqr_score)) | (Dataeconmath$course_score &gt; (q3_score + outlier_threshold_score * iqr_score))\nDataEconMath &lt;- Dataeconmath[!outliers_score, ]\n\n\n2. Run EDA"
+  },
+  {
+    "objectID": "Econ_Math_Project_IBM6510 (2).html#run-correlation-analysis",
+    "href": "Econ_Math_Project_IBM6510 (2).html#run-correlation-analysis",
+    "title": "IBM 6510 Project",
+    "section": "1. Run Correlation Analysis",
+    "text": "1. Run Correlation Analysis\n\nlibrary(corrplot)\n\nWarning: package 'corrplot' was built under R version 4.3.2\n\n\ncorrplot 0.92 loaded\n\nCorMatrix=cor(DataEconMath)\ncorrplot(CorMatrix)\n\n\n\n\n\n\n\nhead(DataEconMath)\n\n  course_score hours_worked hours_studied math_quiz_score calc Econhs\n1        84.43           15          10.0              10    1      0\n2        57.38            0          22.5               9    0      1\n3        66.39           25          12.0               8    1      0\n4        81.15           30          40.0              10    1      0\n5        95.90           25          15.0               8    1      1\n6        83.61            0          30.0              10    1      0"
+  },
+  {
+    "objectID": "Econ_Math_Project_IBM6510 (2).html#multivariate-regressions",
+    "href": "Econ_Math_Project_IBM6510 (2).html#multivariate-regressions",
+    "title": "IBM 6510 Project",
+    "section": "1. Multivariate Regressions",
+    "text": "1. Multivariate Regressions\nAll Variables\n\n# ALL \nModelDesignLinear=linear_reg() %&gt;% \n  set_engine(\"lm\")\n\nRecipeDataEconMath=recipe(DataEconMath, course_score~hours_worked+hours_studied+math_quiz_score+calc+Econhs)\nWFModelAll=workflow() %&gt;% \n  add_recipe(RecipeDataEconMath) %&gt;% \n  add_model(ModelDesignLinear) %&gt;% \n  fit(DataEconMath)\n\ntidy(WFModelAll)\n\n# A tibble: 6 × 5\n  term            estimate std.error statistic   p.value\n  &lt;chr&gt;              &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;\n1 (Intercept)      60.2       2.11       28.5  3.10e-125\n2 hours_worked     -0.181     0.0444     -4.06 5.28e-  5\n3 hours_studied     0.0695    0.0525      1.32 1.86e-  1\n4 math_quiz_score   1.35      0.250       5.43 7.55e-  8\n5 calc              4.77      0.928       5.14 3.48e-  7\n6 Econhs           -0.905     0.845      -1.07 2.85e-  1\n\nglance(WFModelAll)\n\n# A tibble: 1 × 12\n  r.squared adj.r.squared sigma statistic  p.value    df logLik   AIC   BIC\n      &lt;dbl&gt;         &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;\n1     0.112         0.107  11.8      21.1 7.34e-20     5 -3273. 6560. 6593.\n# ℹ 3 more variables: deviance &lt;dbl&gt;, df.residual &lt;int&gt;, nobs &lt;int&gt;\n\n\nFor running this specific regression, we examined all the independent variables and their significance in terms of the correct coefficient sign and its p-value. After examining the values and coefficient signs, the two variables we noticed that did not match were hours_studied and Econhs. Hours Worked + Math Quiz Score + Clac\n\nModelDesignLinear=linear_reg() %&gt;% \n  set_engine(\"lm\")\n\nRecipeDataeconmath=recipe(Dataeconmath, course_score~hours_worked+math_quiz_score+calc)\nWFModelAll=workflow() %&gt;% \n  add_recipe(RecipeDataeconmath) %&gt;% \n  add_model(ModelDesignLinear) %&gt;% \n  fit(Dataeconmath)\n\ntidy(WFModelAll)\n\n# A tibble: 4 × 5\n  term            estimate std.error statistic   p.value\n  &lt;chr&gt;              &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;\n1 (Intercept)       60.2      2.06       29.2  3.35e-130\n2 hours_worked      -0.232    0.0469     -4.96 8.70e-  7\n3 math_quiz_score    1.37     0.265       5.15 3.21e-  7\n4 calc               5.41     0.981       5.51 4.68e-  8\n\nglance(WFModelAll)\n\n# A tibble: 1 × 12\n  r.squared adj.r.squared sigma statistic  p.value    df logLik   AIC   BIC\n      &lt;dbl&gt;         &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;\n1     0.117         0.114  12.6      37.7 7.42e-23     3 -3372. 6753. 6777.\n# ℹ 3 more variables: deviance &lt;dbl&gt;, df.residual &lt;int&gt;, nobs &lt;int&gt;\n\n\nwe had taken hours_studied and Econhs out of the data set and re-ran the regression. From the regression, the coefficient signs and p-values were shown correctly. The coefficient signs had match our hypothesis and the p-values were significant (since the probability is extremely low). Hours Worked + Hours Studied + Econhs\n\nModelDesignLinear=linear_reg() %&gt;% \n  set_engine(\"lm\")\n\nRecipeDataeconmath=recipe(Dataeconmath, course_score~hours_worked+hours_studied+Econhs)\nWFModelAll=workflow() %&gt;% \n  add_recipe(RecipeDataeconmath) %&gt;% \n  add_model(ModelDesignLinear) %&gt;% \n  fit(Dataeconmath)\n\ntidy(WFModelAll)\n\n# A tibble: 4 × 5\n  term          estimate std.error statistic     p.value\n  &lt;chr&gt;            &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;       &lt;dbl&gt;\n1 (Intercept)    74.7       1.08      69.3   0          \n2 hours_worked   -0.243     0.0492    -4.93  0.000000987\n3 hours_studied   0.0132    0.0581     0.227 0.820      \n4 Econhs         -0.632     0.940     -0.673 0.501      \n\nglance(WFModelAll)\n\n# A tibble: 1 × 12\n  r.squared adj.r.squared sigma statistic   p.value    df logLik   AIC   BIC\n      &lt;dbl&gt;         &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;\n1    0.0287        0.0253  13.2      8.38 0.0000172     3 -3412. 6835. 6858.\n# ℹ 3 more variables: deviance &lt;dbl&gt;, df.residual &lt;int&gt;, nobs &lt;int&gt;\n\n\nFor this regression, we were examining the effects of course score with the variable of a high p-value. We found that econhs still negative with a high p-value. The hours_studied had little to no effect on the overall course score.\nHours Work + Hours Studied + Calc\n\nModelDesignLinear=linear_reg() %&gt;% \n  set_engine(\"lm\")\n\nRecipeDataeconmath=recipe(Dataeconmath, course_score~hours_worked+hours_studied+calc)\nWFModelAll=workflow() %&gt;% \n  add_recipe(RecipeDataeconmath) %&gt;% \n  add_model(ModelDesignLinear) %&gt;% \n  fit(Dataeconmath)\n\ntidy(WFModelAll)\n\n# A tibble: 4 × 5\n  term          estimate std.error statistic   p.value\n  &lt;chr&gt;            &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;\n1 (Intercept)    69.5       1.19      58.5   6.72e-300\n2 hours_worked   -0.237     0.0476    -4.98  7.61e-  7\n3 hours_studied   0.0232    0.0562     0.413 6.79e-  1\n4 calc            7.12      0.938      7.59  8.12e- 14\n\nglance(WFModelAll)\n\n# A tibble: 1 × 12\n  r.squared adj.r.squared sigma statistic  p.value    df logLik   AIC   BIC\n      &lt;dbl&gt;         &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;\n1    0.0901        0.0868  12.8      28.0 2.83e-17     3 -3385. 6779. 6803.\n# ℹ 3 more variables: deviance &lt;dbl&gt;, df.residual &lt;int&gt;, nobs &lt;int&gt;\n\n\nFor this regression, we wanted to examine if the hours_studied would be significant with the calculus variable (since it had a significant p-value). We saw that the hours_studied still had little to no effect on the overall course score, while if students had taken calculus, it had affected their course score drastically.\n\n2. Univariate\nThough running the univariate regressions were not necessary, we wanted to investigate how each variable affected the dependent variable separately. We still found that the variables with the correct coefficient signs and p-values are hours worked, math quiz score and calc.\nHours Worked\n\nModelDesignLinear=linear_reg() %&gt;% \n  set_engine(\"lm\")\n\nRecipeDataeconmath=recipe(Dataeconmath, course_score~hours_worked)\nWFModelAll=workflow() %&gt;% \n  add_recipe(RecipeDataeconmath) %&gt;% \n  add_model(ModelDesignLinear) %&gt;% \n  fit(Dataeconmath)\n\ntidy(WFModelAll)\n\n# A tibble: 2 × 5\n  term         estimate std.error statistic     p.value\n  &lt;chr&gt;           &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;       &lt;dbl&gt;\n1 (Intercept)    74.7      0.621     120.   0          \n2 hours_worked   -0.244    0.0491     -4.97 0.000000826\n\nglance(WFModelAll)\n\n# A tibble: 1 × 12\n  r.squared adj.r.squared sigma statistic     p.value    df logLik   AIC   BIC\n      &lt;dbl&gt;         &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt;       &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;\n1    0.0282        0.0270  13.2      24.7 0.000000826     1 -3413. 6831. 6845.\n# ℹ 3 more variables: deviance &lt;dbl&gt;, df.residual &lt;int&gt;, nobs &lt;int&gt;\n\n\nHours Studied\n\nModelDesignLinear=linear_reg() %&gt;% \n  set_engine(\"lm\")\n\nRecipeDataeconmath=recipe(Dataeconmath, course_score~hours_studied)\nWFModelAll=workflow() %&gt;% \n  add_recipe(RecipeDataeconmath) %&gt;% \n  add_model(ModelDesignLinear) %&gt;% \n  fit(Dataeconmath)\n\ntidy(WFModelAll)\n\n# A tibble: 2 × 5\n  term          estimate std.error statistic p.value\n  &lt;chr&gt;            &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;   &lt;dbl&gt;\n1 (Intercept)    72.4       0.940     77.0     0    \n2 hours_studied   0.0161    0.0589     0.274   0.785\n\nglance(WFModelAll)\n\n# A tibble: 1 × 12\n  r.squared adj.r.squared sigma statistic p.value    df logLik   AIC   BIC\n      &lt;dbl&gt;         &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt;   &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;\n1 0.0000879      -0.00109  13.4    0.0748   0.785     1 -3425. 6856. 6870.\n# ℹ 3 more variables: deviance &lt;dbl&gt;, df.residual &lt;int&gt;, nobs &lt;int&gt;\n\n\nCalc\n\nModelDesignLinear=linear_reg() %&gt;% \n  set_engine(\"lm\")\n\nRecipeDataeconmath=recipe(Dataeconmath, course_score~calc)\nWFModelAll=workflow() %&gt;% \n  add_recipe(RecipeDataeconmath) %&gt;% \n  add_model(ModelDesignLinear) %&gt;% \n  fit(Dataeconmath)\n\ntidy(WFModelAll)\n\n# A tibble: 2 × 5\n  term        estimate std.error statistic  p.value\n  &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;\n1 (Intercept)    67.7      0.781     86.7  0       \n2 calc            7.20     0.950      7.58 9.12e-14\n\nglance(WFModelAll)\n\n# A tibble: 1 × 12\n  r.squared adj.r.squared sigma statistic  p.value    df logLik   AIC   BIC\n      &lt;dbl&gt;         &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;\n1    0.0632        0.0621  13.0      57.4 9.12e-14     1 -3397. 6800. 6814.\n# ℹ 3 more variables: deviance &lt;dbl&gt;, df.residual &lt;int&gt;, nobs &lt;int&gt;\n\n\nEconhs\n\nModelDesignLinear=linear_reg() %&gt;% \n  set_engine(\"lm\")\n\nRecipeDataeconmath=recipe(Dataeconmath, course_score~Econhs)\nWFModelAll=workflow() %&gt;% \n  add_recipe(RecipeDataeconmath) %&gt;% \n  add_model(ModelDesignLinear) %&gt;% \n  fit(Dataeconmath)\n\ntidy(WFModelAll)\n\n# A tibble: 2 × 5\n  term        estimate std.error statistic p.value\n  &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;   &lt;dbl&gt;\n1 (Intercept)   72.9       0.579   126.      0    \n2 Econhs        -0.813     0.952    -0.855   0.393\n\nglance(WFModelAll)\n\n# A tibble: 1 × 12\n  r.squared adj.r.squared sigma statistic p.value    df logLik   AIC   BIC\n      &lt;dbl&gt;         &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt;   &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;\n1  0.000858     -0.000316  13.4     0.731   0.393     1 -3424. 6855. 6869.\n# ℹ 3 more variables: deviance &lt;dbl&gt;, df.residual &lt;int&gt;, nobs &lt;int&gt;"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "hobbies.html",
+    "href": "hobbies.html",
+    "title": "SEMA Material",
+    "section": "",
+    "text": "Automotive Ethuanists\nProfessionals in the Automotive Industry\nCar Collectors & Hobbyist\nYoung Car Ethusiast\n\n\n\nCreate Waitlist\n“Sign Up for launch”\nlaunch 100 first to ensure everything is working properly, then accept another 100 and so on and so on\n\n\n\nUse Wording\n” Limited” “5 left”\nTik Tok & Youtube Influencers\nMake it a benefits for body shops and automotive paint and supply industry ( a contract for memberships)\nlet B2b parnters in first\nOutline Benefits\n\n\n\nCost per Acquisition (CPA)\nChannel-Specific Performance\nRenewal Rate\nEngagement Rate\nChurn Rate: Members who do not renew\nTotal Revenue\nSocial Media Engagement"
+  },
+  {
+    "objectID": "hobbies.html#investing-enthusiast",
+    "href": "hobbies.html#investing-enthusiast",
+    "title": "SEMA",
+    "section": "",
+    "text": "I love keeping up with articles and trends about investing, I manage family and friends’ money under an account that has allowed me to develop a keen eye for market trends and investment opportunities beating the market."
+  },
+  {
+    "objectID": "hobbies.html#market-predictions-and-events",
+    "href": "hobbies.html#market-predictions-and-events",
+    "title": "SEMA",
+    "section": "",
+    "text": "I regularly analyze market data to make predictions about future market movements and significant events. Below are some of my recent predictions and their outcomes:\n\n\n\n\n\nPrediction: The tech sector will experience a significant correction due to overvaluation but will come back due to automation and wage increases for cost saving efforts.\n\nOutcome: The NASDAQ index dropped by 10% over the next three months, but it will make up for the loss due to cost svaing efforts through AI, automation, and robots.\n\nPrediction: Tesla still has a 100% gain to make by the end of 2024\n\nOutcome: Cybertruck, Semi Trucks, Energy Storage, Sportster, Robotaxi, teslabot, and AI advances will be valued into it’s evaluation model.\n\nPrediction: Dutch Bros will over take Starbucks in the USA Market and will surpass it’s stock price by the end of 2025.\n\nOutcome: Dutch Bros expansion, innovation, and rapid store openings will make the company the new face of coffee."
+  },
+  {
+    "objectID": "Professional.Experience.html",
+    "href": "Professional.Experience.html",
+    "title": "Professional Career",
+    "section": "",
+    "text": "Asset Living Logo\n\n\nOct 2023 - Present\n\nManaged the entire leasing process\nPre-Leased property to 100%\nImplement Marketing plans and Outreach activities\nUtilized Meta Ads Manager analytics for insights and reports\nOrganize Instagram uploading schedule and content\n\n\n\n\n\n\n\nPanda Logo\n\n\nMay 2022 - Jun 2023\n\nExecuted an internal email marketing campaign to promote 250 Rosetta Stone licenses to employees, which resulted in full license uptake\nOversaw operations of the University of Panda through LMS Platform Cornerstone, ensuring the thorough provision of compliance materials and training for all company associates in Local/Federal, OHSA, HR, and Restaurant rules\nDelivered technical support to operational teams during the weekend & early morning hours utilizing ServiceNow & Outlook\nElevated community engagement at the University of Panda by facilitating discussions and nurturing a dynamic online environment aligned with the organization’s core values\n\n\n\n\n\n\n\nChick-fil-A Logo\n\n\nJan 2021 - Jan 2022\n\nImplement strict cash handling procedures to prevent fraud and errors\nDevelop and implement training programs for employees\nOversaw vault and secured closure of the store, conducted a final walk-through of the store to ensure cleanliness\nTrack the progress of employees and make adjustments to development as needed\n\n\n\n\n\n\n\nSears Logo\n\n\nDec 2019 - Feb 2020\n\nProficiently communicated with customers, coworkers, and managers.\nGained versatile skills such as inventory management, customer service skills, facilitating merchandise pickup, and managing online order fulfillment system across store departments.\nCollaborated effectively with teams to meet deadlines during store closure"
+  },
+  {
+    "objectID": "Professional.Experience.html#work-experience",
+    "href": "Professional.Experience.html#work-experience",
+    "title": "Professional Career",
+    "section": "",
+    "text": "Asset Living Logo\n\n\nOct 2023 - Present\n\nManaged the entire leasing process\nPre-Leased property to 100%\nImplement Marketing plans and Outreach activities\nUtilized Meta Ads Manager analytics for insights and reports\nOrganize Instagram uploading schedule and content\n\n\n\n\n\n\n\nPanda Logo\n\n\nMay 2022 - Jun 2023\n\nExecuted an internal email marketing campaign to promote 250 Rosetta Stone licenses to employees, which resulted in full license uptake\nOversaw operations of the University of Panda through LMS Platform Cornerstone, ensuring the thorough provision of compliance materials and training for all company associates in Local/Federal, OHSA, HR, and Restaurant rules\nDelivered technical support to operational teams during the weekend & early morning hours utilizing ServiceNow & Outlook\nElevated community engagement at the University of Panda by facilitating discussions and nurturing a dynamic online environment aligned with the organization’s core values\n\n\n\n\n\n\n\nChick-fil-A Logo\n\n\nJan 2021 - Jan 2022\n\nImplement strict cash handling procedures to prevent fraud and errors\nDevelop and implement training programs for employees\nOversaw vault and secured closure of the store, conducted a final walk-through of the store to ensure cleanliness\nTrack the progress of employees and make adjustments to development as needed\n\n\n\n\n\n\n\nSears Logo\n\n\nDec 2019 - Feb 2020\n\nProficiently communicated with customers, coworkers, and managers.\nGained versatile skills such as inventory management, customer service skills, facilitating merchandise pickup, and managing online order fulfillment system across store departments.\nCollaborated effectively with teams to meet deadlines during store closure"
+  },
+  {
+    "objectID": "Professional.Experience.html#volunteer-experience",
+    "href": "Professional.Experience.html#volunteer-experience",
+    "title": "Professional Career",
+    "section": "Volunteer Experience",
+    "text": "Volunteer Experience\n\nSocial Media Specialist - Randy Famoso Racing, La Puente, CA\nJuly 2023 - Dec 2023\n\nIncreased Instagram following to 35,000 followers, as well as YouTube subscribers to 1,000\nDeveloped and executed an Instagram content calendar that increased followers and engagement\nSecured sponsorships that resulted in increased brand awareness within the racing community and a new audience"
+  },
+  {
+    "objectID": "index.html#retail",
+    "href": "index.html#retail",
+    "title": "About me",
+    "section": "Retail",
+    "text": "Retail\nMy first job was at 17 working at Sears 2019, I worked as a backroom/front associate. The company already filed for bankruptcy at the time so half of my time in this role was closing the store and liquidating assets.\nSales, Customer Service, and Productivity are the strong traits I carry since I like meeting new customers and helping them with their needs at the store. For me it was always important to always be doing something as my mindset has been, ” Someone is always watching”. As the store came to a complete close, management wanted me to transfer with them to the Whitter location however my heaviest semester at Community College was coming up and I did not want to comprise my GPA for a job, so I declined and moved on focused on finishing my associates.\nWhat I learned was customer service, patience, productivity, and putting previous sales techniques to practice.\n\n\n\nSears, Plaza West Covina"
+  },
+  {
+    "objectID": "index.html#quick-service-restaurant",
+    "href": "index.html#quick-service-restaurant",
+    "title": "About me",
+    "section": "Quick Service Restaurant",
+    "text": "Quick Service Restaurant\nAs I was accepted into California State University of Fullerton in Spring 2021, I also accepted a role as Team Member at Chick-fil-A were 4 months Later, I was promoted to Shift Leader.\nI was lucky to be in charge of the store feedback system and training. My responsibility was to collect feedback from customers through QR codes on store receipts, maintain a better average than the stores around the area, and resolve customer disputes on okta which is what the store used for it’s operations.\nAs a franchise well-known value is customer service and the infamous ” My Pleasure” training associates during the closing shift was a responsibility that was passed down to me. New associates constantly needed training as QSR turnover rate is high.\nAs I passed a year of employment, My last semester at California State University of Fullerton was a heavy spring schedule and a summer semester of 2 classes. I put my 2 weeks in to focus final semesters of my bachelor’s.\nWhat I learned was going beyond listed responsibilities, learning and development, leadership, and maintaining a positive profit rate through the hours of the day.\n\n\n\nChick-fil-A, The Shops at Santa Anita\n\n\nMy second role in QSR was at a support center for Panda Restaurant Group. My last 2 Months in college I was very lucky to obtain the role of Learning & Development while in the last weeks of my degree. This was a unique opportunity and I learned so much from this role, supervisors, and team members.\nSee I was always quiet in seated environments, most of my education journey was spent in the library finishing assignments and leaving when the library closed. I have customer service & leadership skills but not personal communication skills were I can use to network with colleagues. It can be hard to believe but I could not even look at people in the eyes when walk past them I just kept my head down. I always performed my duties and exceeded expectations however the socializing aspect of the job I struggled\nMy supervisor was able to get me outside of this comfort zone and it helped me tremendously. I was able to have conversations with people and maintain eye contact without sweating. I was able to speak up and take the lead in an employee benefit project. which lead to a mini email marketing campaign to regional and area leaders in operations. As well as create and maintain our internal community discussion forums.\nWhat I learned was Interpersonal Skills, Project Management, Group Collaboration, Administrative Work, and Networking.\n\n\n\nPanda Restaurant Group Support Center, Rosemead"
+  },
+  {
+    "objectID": "index.html#real-estate",
+    "href": "index.html#real-estate",
+    "title": "About me",
+    "section": "Real Estate",
+    "text": "Real Estate\nLeaving my corporate role to focus on my master’s was a choice I was excited and nervous making, as I am completing my degree I was able to obtain a role as a Marketing & Leasing coordinator for Asset Living. Here I put some Digital Marketing skill and techniques to practice, though digital marketing can be learn without a degree my program focuses on Marketing analytics and science. I had the responsibility of reporting insights on content as well as producing content to publish on our Instagram page. I also created our wait list with a Google form that allows us to lease any open availability as well as have leads for the next school year.\nWhat I learned was Marketing Outreach, Marketing Insight, Content Creation, and Leasing Administration\n\n\n\nThe Current Apartments, Pomona\n\n\n\nThis was all coded by me using the quatro library on RStudio"
+  },
+  {
+    "objectID": "work_samples.html#project-3-data-science-forecasting",
+    "href": "work_samples.html#project-3-data-science-forecasting",
+    "title": "Work Samples",
+    "section": "Project 3: Data Science Forecasting",
+    "text": "Project 3: Data Science Forecasting\nView Full Report"
+  },
+  {
+    "objectID": "work_samples.html#description-2",
+    "href": "work_samples.html#description-2",
+    "title": "Work Samples",
+    "section": "Description",
+    "text": "Description\nObjective is to predict the number of passengers per class for future periods and understand demand pattern across classes.The full report is available to view in PDF format above\nDownload Project 3 Report (PDF)"
+  },
+  {
+    "objectID": "work_samples.html#project-2-cal-poly-pomona-brand-devlopment-plan",
+    "href": "work_samples.html#project-2-cal-poly-pomona-brand-devlopment-plan",
+    "title": "Work Samples",
+    "section": "Project 2: Cal Poly Pomona Brand Devlopment Plan",
+    "text": "Project 2: Cal Poly Pomona Brand Devlopment Plan\n\nDescription"
+  },
+  {
+    "objectID": "hobbies.html#target-market",
+    "href": "hobbies.html#target-market",
+    "title": "SEMA Material",
+    "section": "",
+    "text": "Automotive Ethuanists\nProfessionals in the Automotive Industry\nCar Collectors & Hobbyist\nYoung Car Ethusiast"
+  },
+  {
+    "objectID": "hobbies.html#membership-distribution",
+    "href": "hobbies.html#membership-distribution",
+    "title": "SEMA Material",
+    "section": "",
+    "text": "Create Waitlist\n“Sign Up for launch”\nlaunch 100 first to ensure everything is working properly, then accept another 100 and so on and so on"
+  },
+  {
+    "objectID": "hobbies.html#marketing",
+    "href": "hobbies.html#marketing",
+    "title": "SEMA Material",
+    "section": "",
+    "text": "Use Wording\n” Limited” “5 left”\nTik Tok & Youtube Influencers\nMake it a benefits for body shops and automotive paint and supply industry ( a contract for memberships)\nlet B2b parnters in first\nOutline Benefits"
+  },
+  {
+    "objectID": "hobbies.html#key-marketing-metrics",
+    "href": "hobbies.html#key-marketing-metrics",
+    "title": "SEMA Material",
+    "section": "",
+    "text": "Cost per Acquisition (CPA)\nChannel-Specific Performance\nRenewal Rate\nEngagement Rate\nChurn Rate: Members who do not renew\nTotal Revenue\nSocial Media Engagement"
+  },
+  {
+    "objectID": "work_samples.html#project-2-cal-poly-pomona-brand-development-plan",
+    "href": "work_samples.html#project-2-cal-poly-pomona-brand-development-plan",
+    "title": "Work Samples",
+    "section": "Project 2: Cal Poly Pomona Brand Development Plan",
+    "text": "Project 2: Cal Poly Pomona Brand Development Plan\nView Full Report\n\nDescription\nA Brand Development plan for the Cal Poly Pomona farm store.\nDownload Project 2 Report (PDF)"
+  },
+  {
+    "objectID": "SEMA_Material.html",
+    "href": "SEMA_Material.html",
+    "title": "SEMA Material",
+    "section": "",
+    "text": "Automotive Enthusiast\nProfessionals in the Automotive Industry\nCar Collectors & Hobbyists\nYoung Car Enthusiast\nCollege Automotive Clubs"
+  },
+  {
+    "objectID": "SEMA_Material.html#target-market",
+    "href": "SEMA_Material.html#target-market",
+    "title": "SEMA Material",
+    "section": "",
+    "text": "Automotive Enthusiast\nProfessionals in the Automotive Industry\nCar Collectors & Hobbyists\nYoung Car Enthusiast\nCollege Automotive Clubs"
+  },
+  {
+    "objectID": "SEMA_Material.html#membership-distribution",
+    "href": "SEMA_Material.html#membership-distribution",
+    "title": "SEMA Material",
+    "section": "Membership Distribution",
+    "text": "Membership Distribution\n\nCreate a Waitlist\nObjective: Generate interest and sense of exclusivity\n\n\n“Sign Up for Launch” Campaign\nObjective: Build momentum and ensure a strong start on launch day\n\n\nPhased Launch\nObjective: Launch 100 Memberships to test systems and ensure everything is working properly, then accept the next batch of 100"
+  },
+  {
+    "objectID": "SEMA_Material.html#marketing",
+    "href": "SEMA_Material.html#marketing",
+    "title": "SEMA Material",
+    "section": "Marketing",
+    "text": "Marketing\n\nUse Wording\n\n“Limited”\n“5 Memberships Left”\n“Essential/Need”\n“Customized/Unique”\n“Benefits”\n\n\n\nInfluencer Marketing\n\nTikTok & YouTube Influencers where automotive content thrives\n\n\n\nMemberships for Specific Segments\n\nAutomotive Paint and Supply Businesses\nAuto Body Shops\n\n\n\nOutline Benefits\n\nExclusive Content\nMerchandise\nDiscounts\nEvents"
+  },
+  {
+    "objectID": "SEMA_Material.html#key-marketing-metrics",
+    "href": "SEMA_Material.html#key-marketing-metrics",
+    "title": "SEMA Material",
+    "section": "Key Marketing Metrics",
+    "text": "Key Marketing Metrics\n\nCost per Acquisition (CPA)\nChannel-Specific Performance\nRenewal Rate\nEngagement Rate\nChurn Rate\nSocial Media Engagement"
+  }
+]

@@ -1,0 +1,39 @@
+---
+title: "Work Samples"
+---
+
+## Project 1: Wayfair SEO Analysis
+
+<a href="WAYFAIR_SEO.pdf" target="_blank" class="btn btn-primary">View Full Report</a>
+
+### Description
+
+This project involved analyzing marketing data to identify key trends and insights for Wayfair. The full report is available to view in PDF format above
+
+[Download Project 1 Report (PDF)](WAYFAIR_SEO.pdf)
+
+------------------------------------------------------------------------
+
+## Project 2: Cal Poly Pomona Brand Development Plan
+
+<a href="CPP_Brand.pdf" target="_blank" class="btn btn-primary">View Full Report</a>
+
+### Description
+
+A Brand Development plan for the Cal Poly Pomona farm store.
+
+[Download Project 2 Report (PDF)](CPP_Brand.pdf)
+
+------------------------------------------------------------------------
+
+## Project 3: Data Science Forecasting
+
+<a href="Market%20Forecasting%20Project.pdf" target="_blank" class="btn btn-primary">View Full Report</a>
+
+## Description
+
+Objective is to predict the number of passengers per class for future periods and understand demand pattern across classes.The full report is available to view in PDF format above
+
+[Download Project 3 Report (PDF)](Market%20Forecasting%20Project.pdf)
+
+------------------------------------------------------------------------

@@ -1,0 +1,271 @@
+---
+title: "IBM 6510 Project"
+author: "George Barahona & Judy Chen & Michael Arteaga"
+date: '`r format(Sys.time())`'
+output: 
+  html_document:
+    toc: yes
+    toc_depth: 5 
+    toc_float: yes
+    collapsed: false
+    highlight: espresso
+    theme: journal
+    number_sections: yes
+---
+
+# **Introduction** 
+
+**1. What is your research question?**
+
+  In the project, the question we are examining is how does **work hours**, **study hours**, if taking **calculus** and **economics** (in high school), and **quiz scores** affect the college student’s **overall course score in economics.**
+
+**2. What is your dependent variable which are candidates for independent variables?**
+
+  Our dependent variable is the student’s course score **(score)**. Our independent variables are: hours worked per week **(work)**, hours studying per week **(study)**, if economics was taken in high school **(econhs)**, if calculus was taken in high school **(calculus)**, and math quiz score **(mathscr)**. 
+
+**3. Why do you think the independent variables are correlated with the independent variables?In which direction (positive or negative do you expect the independent variables to influence the dependent variables?**
+
+  For students working more hours, it will negatively affect the student’s course score because they are working more than they are studying. 
+
+  For students studying more, it will positively affect the student’s course score because they are putting in more hours to study the material. 
+
+  If economics and calculus were taken in high school, it will positively increase the student’s course score because they have previous knowledge on the class material. 
+
+  The math quiz score will positively increase the student’s course score because the math quiz contributes to their overall score.
+
+# **Data**
+
+## Define the Data
+Describe the data you are using with an exact link to the source where you got the data.
+You can use datasets that were not used in class and not used by other students.
+ 
+  The data set we are using for this project is in the woolridge package called **econmath**. This data set came from the Michigan State University Department of Economics from Professor Charles Ballard.The data frame contains 856 observations and 17 variables. 
+
+```{r}
+
+library(wooldridge)
+library(dplyr)
+library(janitor)
+library(tidymodels)
+Dataeconmath=econmath
+
+### Choosing our Dependent variable & Independent variables
+Dataeconmath=econmath %>% 
+  clean_names("upper_camel") %>% 
+  select(course_score=Score,hours_worked=Work,hours_studied=Study,math_quiz_score=Mathscr,calc=Calculus,Econhs,
+         )
+
+```
+
+
+**<u>The data is behind a cengage paywall,</u>** https://www.cengage.com/c/introductory-econometrics-a-modern-approach-6e-wooldridge/, however you can find **econmath** on page 51 on the wooldridge package. https://cran.r-project.org/web/packages/wooldridge/wooldridge.pdf
+
+# **Exploratory Data Analysis**
+
+## 1. Clean Data
+```{r}
+###Cleaning Data
+sum(is.na(Dataeconmath))
+cat("There is amount of missing values:",sum(is.na(Dataeconmath)))
+
+### Remove Duplicate
+Dataeconmath=unique(Dataeconmath)
+
+### Remove Outliers
+numeric_columns=sapply(Dataeconmath, is.numeric)
+DataEconMath_numeric=Dataeconmath[, numeric_columns]
+q1_score=quantile(DataEconMath_numeric$course_score, 0.25)
+q3_score=quantile(DataEconMath_numeric$course_score, 0.75)
+iqr_score=q3_score - q1_score
+outlier_threshold_score <- 1.5
+outliers_score <- (Dataeconmath$course_score < (q1_score - outlier_threshold_score * iqr_score)) | (Dataeconmath$course_score > (q3_score + outlier_threshold_score * iqr_score))
+DataEconMath <- Dataeconmath[!outliers_score, ]
+```
+
+### 2. Run EDA
+```{r, echo=FALSE}
+htmltools::HTML('<iframe src="EDAReport.html" width="100%" height="600px"></iframe>')
+```
+
+# **Correlation Analysis**
+## 1. Run Correlation Analysis
+```{r}
+library(corrplot)
+CorMatrix=cor(DataEconMath)
+corrplot(CorMatrix)
+
+head(DataEconMath)
+```
+
+# **Directed Acyclical Graph**
+1. Use R to generate a DAG that reflects your assumptions on how independent variables influence your dependent variable and each other. Include the code and the graph in your report.
+```{r}
+###DAG
+library(ggdag)
+library(dagitty)
+dagify(course_score~hours_worked+hours_studied+math_quiz_score+calc+echonhs) %>%
+  ggdag(node_size =45)+theme_void()
+```
+
+
+# **Regressions**
+## 1. Multivariate Regressions
+
+**All Variables**
+```{r}
+# ALL 
+ModelDesignLinear=linear_reg() %>% 
+  set_engine("lm")
+
+RecipeDataEconMath=recipe(DataEconMath, course_score~hours_worked+hours_studied+math_quiz_score+calc+Econhs)
+WFModelAll=workflow() %>% 
+  add_recipe(RecipeDataEconMath) %>% 
+  add_model(ModelDesignLinear) %>% 
+  fit(DataEconMath)
+
+tidy(WFModelAll)
+glance(WFModelAll)
+```
+
+
+For running this specific regression, we examined all the independent variables and their significance in terms of the correct coefficient sign and its p-value. After examining the values and coefficient signs, the two variables we noticed that did not match were **hours_studied** and **Econhs**. 
+**Hours Worked + Math Quiz Score + Clac**
+```{r}
+ModelDesignLinear=linear_reg() %>% 
+  set_engine("lm")
+
+RecipeDataeconmath=recipe(Dataeconmath, course_score~hours_worked+math_quiz_score+calc)
+WFModelAll=workflow() %>% 
+  add_recipe(RecipeDataeconmath) %>% 
+  add_model(ModelDesignLinear) %>% 
+  fit(Dataeconmath)
+
+tidy(WFModelAll)
+glance(WFModelAll)
+```
+
+
+we had taken **hours_studied** and **Econhs** out of the data set and re-ran the regression. From the regression, the coefficient signs and p-values were shown correctly. The coefficient signs had match our hypothesis and the p-values were significant (since the probability is extremely low). 
+**Hours Worked + Hours Studied + Econhs**
+```{r}
+ModelDesignLinear=linear_reg() %>% 
+  set_engine("lm")
+
+RecipeDataeconmath=recipe(Dataeconmath, course_score~hours_worked+hours_studied+Econhs)
+WFModelAll=workflow() %>% 
+  add_recipe(RecipeDataeconmath) %>% 
+  add_model(ModelDesignLinear) %>% 
+  fit(Dataeconmath)
+
+tidy(WFModelAll)
+glance(WFModelAll)
+```
+
+
+For this regression, we were examining the effects of course score with the variable of a high p-value. We found that **econhs** still negative with a high p-value. The **hours_studied** had little to no effect on the overall course score. 
+
+**Hours Work + Hours Studied + Calc**
+```{r}
+ModelDesignLinear=linear_reg() %>% 
+  set_engine("lm")
+
+RecipeDataeconmath=recipe(Dataeconmath, course_score~hours_worked+hours_studied+calc)
+WFModelAll=workflow() %>% 
+  add_recipe(RecipeDataeconmath) %>% 
+  add_model(ModelDesignLinear) %>% 
+  fit(Dataeconmath)
+
+tidy(WFModelAll)
+glance(WFModelAll)
+```
+
+For this regression, we wanted to examine if the **hours_studied** would be significant with the calculus variable (since it had a significant p-value). We saw that the **hours_studied** still had little to no effect on the overall course score, while if students had taken calculus, it had affected their course score drastically. 
+
+### 2. Univariate
+
+Though running the univariate regressions were not necessary, we wanted to investigate how each variable affected the dependent variable separately. We still found that the variables with the correct coefficient signs and p-values are **hours worked**, **math quiz score** and **calc**. 
+
+**Hours Worked**
+```{r}
+ModelDesignLinear=linear_reg() %>% 
+  set_engine("lm")
+
+RecipeDataeconmath=recipe(Dataeconmath, course_score~hours_worked)
+WFModelAll=workflow() %>% 
+  add_recipe(RecipeDataeconmath) %>% 
+  add_model(ModelDesignLinear) %>% 
+  fit(Dataeconmath)
+
+tidy(WFModelAll)
+glance(WFModelAll)
+
+```
+
+**Hours Studied**
+```{r}
+ModelDesignLinear=linear_reg() %>% 
+  set_engine("lm")
+
+RecipeDataeconmath=recipe(Dataeconmath, course_score~hours_studied)
+WFModelAll=workflow() %>% 
+  add_recipe(RecipeDataeconmath) %>% 
+  add_model(ModelDesignLinear) %>% 
+  fit(Dataeconmath)
+
+tidy(WFModelAll)
+glance(WFModelAll)
+
+```
+
+**Calc**
+```{r}
+ModelDesignLinear=linear_reg() %>% 
+  set_engine("lm")
+
+RecipeDataeconmath=recipe(Dataeconmath, course_score~calc)
+WFModelAll=workflow() %>% 
+  add_recipe(RecipeDataeconmath) %>% 
+  add_model(ModelDesignLinear) %>% 
+  fit(Dataeconmath)
+
+tidy(WFModelAll)
+glance(WFModelAll)
+
+```
+
+**Econhs**
+```{r}
+ModelDesignLinear=linear_reg() %>% 
+  set_engine("lm")
+
+RecipeDataeconmath=recipe(Dataeconmath, course_score~Econhs)
+WFModelAll=workflow() %>% 
+  add_recipe(RecipeDataeconmath) %>% 
+  add_model(ModelDesignLinear) %>% 
+  fit(Dataeconmath)
+
+tidy(WFModelAll)
+glance(WFModelAll)
+
+```
+
+# **Final Regression**
+We conlcude that the regression with the most significant p-values will be the regression with the independent variables:
+**Hours Worked + Math Quiz Score + Calc**
+```{r}
+ModelDesignLinear=linear_reg() %>% 
+  set_engine("lm")
+
+RecipeDataeconmath=recipe(Dataeconmath, course_score~hours_worked+math_quiz_score+calc)
+WFModelAll=workflow() %>% 
+  add_recipe(RecipeDataeconmath) %>% 
+  add_model(ModelDesignLinear) %>% 
+  fit(Dataeconmath)
+
+tidy(WFModelAll)
+glance(WFModelAll)
+```
+
+
+**1. What quantitative effect of an increase of the independent variable?**   
+Considering our data, it is reasonable for us to conclude that a higher quiz score and having taken a Calculus course would positively influence a student’s course score in Economics, while hours worked would negatively impact their course score. After running the regression, we know that with if our independent variables increase by 1 unit, our dependent variable will also increase by 1 unit as they are directly correlated. Additionally, if our independent variable was a negative value, it would cause our dependent variable to decrease by an equal amount. The correlation between the independent and dependent variables implies meaningful association between them.

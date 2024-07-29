@@ -1,0 +1,13 @@
+{
+    "path": "~/IBM6300/gb_portfolio",
+    "sortOrder": [
+        {
+            "columnIndex": 4,
+            "ascending": false
+        },
+        {
+            "columnIndex": 2,
+            "ascending": true
+        }
+    ]
+}
