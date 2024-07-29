@@ -14,32 +14,39 @@
     "text": "View Full Report\n\n\nThis project involved analyzing marketing data to identify key trends and insights for Wayfair. The full report is available to view in PDF format above\nDownload Project 1 Report (PDF)"
   },
   {
-    "objectID": "work_samples.html#project-2-data-science",
-    "href": "work_samples.html#project-2-data-science",
+    "objectID": "work_samples.html#project-2-cal-poly-pomona-farm-store-brand-development-plan",
+    "href": "work_samples.html#project-2-cal-poly-pomona-farm-store-brand-development-plan",
     "title": "Work Samples",
-    "section": "Project 2: Data Science",
-    "text": "Project 2: Data Science\nView Report\n\nDescription\nRstudio is a one of the most powerful statistical programming for calculating and plotting big data sets. Our project is about examining how work hours, study hours, and if taking Economics in high school affected college stduent’s GPA in their first semester.The full report is available to view in R format above\nDownload Project 1 Rscript (Rmd)"
+    "section": "Project 2: Cal Poly Pomona Farm Store Brand Development Plan",
+    "text": "Project 2: Cal Poly Pomona Farm Store Brand Development Plan\nView Full Report\n\nDescription\nA Brand Development plan for the Cal Poly Pomona farm store.\nDownload Project 2 Report (PDF)"
   },
   {
-    "objectID": "work_samples.html#project-3-data-science-project-in-progress",
-    "href": "work_samples.html#project-3-data-science-project-in-progress",
+    "objectID": "work_samples.html#project-3-data-science-forecasting",
+    "href": "work_samples.html#project-3-data-science-forecasting",
     "title": "Work Samples",
-    "section": "Project 3: DATA SCIENCE PROJECT IN PROGRESS",
-    "text": "Project 3: DATA SCIENCE PROJECT IN PROGRESS"
+    "section": "Project 3: Data Science Forecasting",
+    "text": "Project 3: Data Science Forecasting\nView Full Report"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "About me",
+    "objectID": "work_samples.html#description-2",
+    "href": "work_samples.html#description-2",
+    "title": "Work Samples",
+    "section": "Description",
+    "text": "Description\nObjective is to predict the number of passengers per class for future periods and understand demand pattern across classes.The full report is available to view in PDF format above\nDownload Project 3 Report (PDF)"
+  },
+  {
+    "objectID": "Professional.Experience.html",
+    "href": "Professional.Experience.html",
+    "title": "Professional Experience",
     "section": "",
-    "text": "I love keeping up with Economics, Social Media Trends, Machine learning, and Innovation. Learning and Development is the foundation of my personal and professional life, I believe taking on continuous learning and new endeavors fuels an exciting career and life!\nI have been very lucky and grateful to be exposed to various industries in my Personal and Professional career, learning as much as I can along the way."
+    "text": "Asset Living Logo\n\n\nOct 2023 - Present\n\nManaged the entire leasing process\nPre-Leased property to 100%\nImplement Marketing plans and Outreach activities\nUtilized Meta Ads Manager analytics for insights and reports\nOrganize Instagram uploading schedule and content"
   },
   {
-    "objectID": "index.html#automotive-industrial-refinish",
-    "href": "index.html#automotive-industrial-refinish",
-    "title": "About me",
-    "section": "Automotive & Industrial Refinish",
-    "text": "Automotive & Industrial Refinish\nGrowing up I always went to work with my father for as long as I can remember. As soon as I got my driving permit my father will have me as a chauffeur going to at least 7 body shops in LA every day on the summer 2018. He is Senior Account Manager and I got to see my father interact with Body Shop owners and saw how Body Shop owners ran their businesses each more differently than the next. Different people meant different cultures, needs, and ways they run there business.\nMy father’s relationships with his customers were more personal than professional, there I realized sales is more than just products and services but going the extra mile to keep a person’s business. In this the people business is the side of the business that not everyone comprehends unless they are going that extra mile for there clients. He was always proactive and going the extra mile for new and current business, these are the values I stuck with and has helped me beyond my personal and professional career.\nWhat I learned with him was how to build relationships, maintaining relationships, going the extra mile, and people.\nI met so many Body Shop owners during this time and have close relationships with some since they saw me as a child. I actually worked at a family friend’s shop, Bellwood Auto Body, in Bell Gardens for 1 Month in the Summer 2019.\n\n\n\nBellwood Auto Body, Bell Gardens"
+    "objectID": "Professional.Experience.html#volunteer-experience",
+    "href": "Professional.Experience.html#volunteer-experience",
+    "title": "Professional Experience",
+    "section": "Volunteer Experience",
+    "text": "Volunteer Experience\n\nSocial Media Specialist - Randy Famoso Racing, La Puente, CA\nJuly 2023 - Dec 2023\n\nIncreased Instagram following to 35,000 followers, as well as YouTube subscribers to 1,000\nDeveloped and executed an Instagram content calendar that increased followers and engagement\nSecured sponsorships that resulted in increased brand awareness within the racing community and a new audience"
   },
   {
     "objectID": "Econ_Math_Project_IBM6510 (2).html",
@@ -53,7 +60,7 @@
     "href": "Econ_Math_Project_IBM6510 (2).html#define-the-data",
     "title": "IBM 6510 Project",
     "section": "Define the Data",
-    "text": "Define the Data\nDescribe the data you are using with an exact link to the source where you got the data. You can use datasets that were not used in class and not used by other students.\nThe data set we are using for this project is in the woolridge package called econmath. This data set came from the Michigan State University Department of Economics from Professor Charles Ballard.The data frame contains 856 observations and 17 variables.\n\nlibrary(wooldridge)\nlibrary(dplyr)\n\n\nAttaching package: 'dplyr'\n\n\nThe following objects are masked from 'package:stats':\n\n    filter, lag\n\n\nThe following objects are masked from 'package:base':\n\n    intersect, setdiff, setequal, union\n\nlibrary(janitor)\n\n\nAttaching package: 'janitor'\n\n\nThe following objects are masked from 'package:stats':\n\n    chisq.test, fisher.test\n\nlibrary(tidymodels)\n\n── Attaching packages ────────────────────────────────────── tidymodels 1.1.1 ──\n\n\n✔ broom        1.0.5     ✔ rsample      1.2.0\n✔ dials        1.2.0     ✔ tibble       3.2.1\n✔ ggplot2      3.4.3     ✔ tidyr        1.3.0\n✔ infer        1.0.5     ✔ tune         1.1.2\n✔ modeldata    1.2.0     ✔ workflows    1.1.3\n✔ parsnip      1.1.1     ✔ workflowsets 1.0.1\n✔ purrr        1.0.2     ✔ yardstick    1.2.0\n✔ recipes      1.0.8     \n\n\nWarning: package 'scales' was built under R version 4.3.2\n\n\nWarning: package 'recipes' was built under R version 4.3.2\n\n\n── Conflicts ───────────────────────────────────────── tidymodels_conflicts() ──\n✖ purrr::discard() masks scales::discard()\n✖ dplyr::filter()  masks stats::filter()\n✖ dplyr::lag()     masks stats::lag()\n✖ recipes::step()  masks stats::step()\n• Use tidymodels_prefer() to resolve common conflicts.\n\nDataeconmath=econmath\n\n### Choosing our Dependent variable & Independent variables\nDataeconmath=econmath %&gt;% \n  clean_names(\"upper_camel\") %&gt;% \n  select(course_score=Score,hours_worked=Work,hours_studied=Study,math_quiz_score=Mathscr,calc=Calculus,Econhs,\n         )\n\nThe data is behind a cengage paywall, https://www.cengage.com/c/introductory-econometrics-a-modern-approach-6e-wooldridge/, however you can find econmath on page 51 on the wooldridge package. https://cran.r-project.org/web/packages/wooldridge/wooldridge.pdf"
+    "text": "Define the Data\nDescribe the data you are using with an exact link to the source where you got the data. You can use datasets that were not used in class and not used by other students.\nThe data set we are using for this project is in the woolridge package called econmath. This data set came from the Michigan State University Department of Economics from Professor Charles Ballard.The data frame contains 856 observations and 17 variables.\n\nlibrary(wooldridge)\nlibrary(dplyr)\n\n\nAttaching package: 'dplyr'\n\n\nThe following objects are masked from 'package:stats':\n\n    filter, lag\n\n\nThe following objects are masked from 'package:base':\n\n    intersect, setdiff, setequal, union\n\nlibrary(janitor)\n\n\nAttaching package: 'janitor'\n\n\nThe following objects are masked from 'package:stats':\n\n    chisq.test, fisher.test\n\nlibrary(tidymodels)\n\n── Attaching packages ────────────────────────────────────── tidymodels 1.1.1 ──\n\n\n✔ broom        1.0.5     ✔ rsample      1.2.0\n✔ dials        1.2.0     ✔ tibble       3.2.1\n✔ ggplot2      3.4.3     ✔ tidyr        1.3.0\n✔ infer        1.0.5     ✔ tune         1.1.2\n✔ modeldata    1.2.0     ✔ workflows    1.1.3\n✔ parsnip      1.1.1     ✔ workflowsets 1.0.1\n✔ purrr        1.0.2     ✔ yardstick    1.2.0\n✔ recipes      1.0.8     \n\n\nWarning: package 'scales' was built under R version 4.3.2\n\n\nWarning: package 'recipes' was built under R version 4.3.2\n\n\n── Conflicts ───────────────────────────────────────── tidymodels_conflicts() ──\n✖ purrr::discard() masks scales::discard()\n✖ dplyr::filter()  masks stats::filter()\n✖ dplyr::lag()     masks stats::lag()\n✖ recipes::step()  masks stats::step()\n• Use suppressPackageStartupMessages() to eliminate package startup messages\n\nDataeconmath=econmath\n\n### Choosing our Dependent variable & Independent variables\nDataeconmath=econmath %&gt;% \n  clean_names(\"upper_camel\") %&gt;% \n  select(course_score=Score,hours_worked=Work,hours_studied=Study,math_quiz_score=Mathscr,calc=Calculus,Econhs,\n         )\n\nThe data is behind a cengage paywall, https://www.cengage.com/c/introductory-econometrics-a-modern-approach-6e-wooldridge/, however you can find econmath on page 51 on the wooldridge package. https://cran.r-project.org/web/packages/wooldridge/wooldridge.pdf"
   },
   {
     "objectID": "Econ_Math_Project_IBM6510 (2).html#clean-data",
@@ -84,46 +91,18 @@
     "text": "About this site\n\n1 + 1\n\n[1] 2"
   },
   {
-    "objectID": "hobbies.html",
-    "href": "hobbies.html",
-    "title": "SEMA Material",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "About me",
     "section": "",
-    "text": "Automotive Ethuanists\nProfessionals in the Automotive Industry\nCar Collectors & Hobbyist\nYoung Car Ethusiast\n\n\n\nCreate Waitlist\n“Sign Up for launch”\nlaunch 100 first to ensure everything is working properly, then accept another 100 and so on and so on\n\n\n\nUse Wording\n” Limited” “5 left”\nTik Tok & Youtube Influencers\nMake it a benefits for body shops and automotive paint and supply industry ( a contract for memberships)\nlet B2b parnters in first\nOutline Benefits\n\n\n\nCost per Acquisition (CPA)\nChannel-Specific Performance\nRenewal Rate\nEngagement Rate\nChurn Rate: Members who do not renew\nTotal Revenue\nSocial Media Engagement"
+    "text": "I love keeping up with Economics, Social Media Trends, Machine learning, and Innovation. Learning and Development is the foundation of my personal and professional life, I believe taking on continuous learning and new endeavors fuels an exciting career and life!\nI have been very lucky and grateful to be exposed to various industries in my Personal and Professional career, learning as much as I can along the way."
   },
   {
-    "objectID": "hobbies.html#investing-enthusiast",
-    "href": "hobbies.html#investing-enthusiast",
-    "title": "SEMA",
-    "section": "",
-    "text": "I love keeping up with articles and trends about investing, I manage family and friends’ money under an account that has allowed me to develop a keen eye for market trends and investment opportunities beating the market."
-  },
-  {
-    "objectID": "hobbies.html#market-predictions-and-events",
-    "href": "hobbies.html#market-predictions-and-events",
-    "title": "SEMA",
-    "section": "",
-    "text": "I regularly analyze market data to make predictions about future market movements and significant events. Below are some of my recent predictions and their outcomes:\n\n\n\n\n\nPrediction: The tech sector will experience a significant correction due to overvaluation but will come back due to automation and wage increases for cost saving efforts.\n\nOutcome: The NASDAQ index dropped by 10% over the next three months, but it will make up for the loss due to cost svaing efforts through AI, automation, and robots.\n\nPrediction: Tesla still has a 100% gain to make by the end of 2024\n\nOutcome: Cybertruck, Semi Trucks, Energy Storage, Sportster, Robotaxi, teslabot, and AI advances will be valued into it’s evaluation model.\n\nPrediction: Dutch Bros will over take Starbucks in the USA Market and will surpass it’s stock price by the end of 2025.\n\nOutcome: Dutch Bros expansion, innovation, and rapid store openings will make the company the new face of coffee."
-  },
-  {
-    "objectID": "Professional.Experience.html",
-    "href": "Professional.Experience.html",
-    "title": "Professional Career",
-    "section": "",
-    "text": "Asset Living Logo\n\n\nOct 2023 - Present\n\nManaged the entire leasing process\nPre-Leased property to 100%\nImplement Marketing plans and Outreach activities\nUtilized Meta Ads Manager analytics for insights and reports\nOrganize Instagram uploading schedule and content\n\n\n\n\n\n\n\nPanda Logo\n\n\nMay 2022 - Jun 2023\n\nExecuted an internal email marketing campaign to promote 250 Rosetta Stone licenses to employees, which resulted in full license uptake\nOversaw operations of the University of Panda through LMS Platform Cornerstone, ensuring the thorough provision of compliance materials and training for all company associates in Local/Federal, OHSA, HR, and Restaurant rules\nDelivered technical support to operational teams during the weekend & early morning hours utilizing ServiceNow & Outlook\nElevated community engagement at the University of Panda by facilitating discussions and nurturing a dynamic online environment aligned with the organization’s core values\n\n\n\n\n\n\n\nChick-fil-A Logo\n\n\nJan 2021 - Jan 2022\n\nImplement strict cash handling procedures to prevent fraud and errors\nDevelop and implement training programs for employees\nOversaw vault and secured closure of the store, conducted a final walk-through of the store to ensure cleanliness\nTrack the progress of employees and make adjustments to development as needed\n\n\n\n\n\n\n\nSears Logo\n\n\nDec 2019 - Feb 2020\n\nProficiently communicated with customers, coworkers, and managers.\nGained versatile skills such as inventory management, customer service skills, facilitating merchandise pickup, and managing online order fulfillment system across store departments.\nCollaborated effectively with teams to meet deadlines during store closure"
-  },
-  {
-    "objectID": "Professional.Experience.html#work-experience",
-    "href": "Professional.Experience.html#work-experience",
-    "title": "Professional Career",
-    "section": "",
-    "text": "Asset Living Logo\n\n\nOct 2023 - Present\n\nManaged the entire leasing process\nPre-Leased property to 100%\nImplement Marketing plans and Outreach activities\nUtilized Meta Ads Manager analytics for insights and reports\nOrganize Instagram uploading schedule and content\n\n\n\n\n\n\n\nPanda Logo\n\n\nMay 2022 - Jun 2023\n\nExecuted an internal email marketing campaign to promote 250 Rosetta Stone licenses to employees, which resulted in full license uptake\nOversaw operations of the University of Panda through LMS Platform Cornerstone, ensuring the thorough provision of compliance materials and training for all company associates in Local/Federal, OHSA, HR, and Restaurant rules\nDelivered technical support to operational teams during the weekend & early morning hours utilizing ServiceNow & Outlook\nElevated community engagement at the University of Panda by facilitating discussions and nurturing a dynamic online environment aligned with the organization’s core values\n\n\n\n\n\n\n\nChick-fil-A Logo\n\n\nJan 2021 - Jan 2022\n\nImplement strict cash handling procedures to prevent fraud and errors\nDevelop and implement training programs for employees\nOversaw vault and secured closure of the store, conducted a final walk-through of the store to ensure cleanliness\nTrack the progress of employees and make adjustments to development as needed\n\n\n\n\n\n\n\nSears Logo\n\n\nDec 2019 - Feb 2020\n\nProficiently communicated with customers, coworkers, and managers.\nGained versatile skills such as inventory management, customer service skills, facilitating merchandise pickup, and managing online order fulfillment system across store departments.\nCollaborated effectively with teams to meet deadlines during store closure"
-  },
-  {
-    "objectID": "Professional.Experience.html#volunteer-experience",
-    "href": "Professional.Experience.html#volunteer-experience",
-    "title": "Professional Career",
-    "section": "Volunteer Experience",
-    "text": "Volunteer Experience\n\nSocial Media Specialist - Randy Famoso Racing, La Puente, CA\nJuly 2023 - Dec 2023\n\nIncreased Instagram following to 35,000 followers, as well as YouTube subscribers to 1,000\nDeveloped and executed an Instagram content calendar that increased followers and engagement\nSecured sponsorships that resulted in increased brand awareness within the racing community and a new audience"
+    "objectID": "index.html#automotive-industrial-refinish",
+    "href": "index.html#automotive-industrial-refinish",
+    "title": "About me",
+    "section": "Automotive & Industrial Refinish",
+    "text": "Automotive & Industrial Refinish\nGrowing up I always went to work with my father for as long as I can remember. As soon as I got my driving permit my father will have me as a chauffeur going to at least 7 body shops in LA every day on the summer 2018. He is Senior Account Manager and I got to see my father interact with Body Shop owners and saw how Body Shop owners ran their businesses each more differently than the next. Different people meant different cultures, needs, and ways they run there business.\nMy father’s relationships with his customers were more personal than professional, there I realized sales is more than just products and services but going the extra mile to keep a person’s business. In this the people business is the side of the business that not everyone comprehends unless they are going that extra mile for there clients. He was always proactive and going the extra mile for new and current business, these are the values I stuck with and has helped me beyond my personal and professional career.\nWhat I learned with him was how to build relationships, maintaining relationships, going the extra mile, and people.\nI met so many Body Shop owners during this time and have close relationships with some since they saw me as a child. I actually worked at a family friend’s shop, Bellwood Auto Body, in Bell Gardens for 1 Month in the Summer 2019.\n\n\n\nBellwood Auto Body, Bell Gardens"
   },
   {
     "objectID": "index.html#retail",
@@ -145,62 +124,6 @@
     "title": "About me",
     "section": "Real Estate",
     "text": "Real Estate\nLeaving my corporate role to focus on my master’s was a choice I was excited and nervous making, as I am completing my degree I was able to obtain a role as a Marketing & Leasing coordinator for Asset Living. Here I put some Digital Marketing skill and techniques to practice, though digital marketing can be learn without a degree my program focuses on Marketing analytics and science. I had the responsibility of reporting insights on content as well as producing content to publish on our Instagram page. I also created our wait list with a Google form that allows us to lease any open availability as well as have leads for the next school year.\nWhat I learned was Marketing Outreach, Marketing Insight, Content Creation, and Leasing Administration\n\n\n\nThe Current Apartments, Pomona\n\n\n\nThis was all coded by me using the quatro library on RStudio"
-  },
-  {
-    "objectID": "work_samples.html#project-3-data-science-forecasting",
-    "href": "work_samples.html#project-3-data-science-forecasting",
-    "title": "Work Samples",
-    "section": "Project 3: Data Science Forecasting",
-    "text": "Project 3: Data Science Forecasting\nView Full Report"
-  },
-  {
-    "objectID": "work_samples.html#description-2",
-    "href": "work_samples.html#description-2",
-    "title": "Work Samples",
-    "section": "Description",
-    "text": "Description\nObjective is to predict the number of passengers per class for future periods and understand demand pattern across classes.The full report is available to view in PDF format above\nDownload Project 3 Report (PDF)"
-  },
-  {
-    "objectID": "work_samples.html#project-2-cal-poly-pomona-brand-devlopment-plan",
-    "href": "work_samples.html#project-2-cal-poly-pomona-brand-devlopment-plan",
-    "title": "Work Samples",
-    "section": "Project 2: Cal Poly Pomona Brand Devlopment Plan",
-    "text": "Project 2: Cal Poly Pomona Brand Devlopment Plan\n\nDescription"
-  },
-  {
-    "objectID": "hobbies.html#target-market",
-    "href": "hobbies.html#target-market",
-    "title": "SEMA Material",
-    "section": "",
-    "text": "Automotive Ethuanists\nProfessionals in the Automotive Industry\nCar Collectors & Hobbyist\nYoung Car Ethusiast"
-  },
-  {
-    "objectID": "hobbies.html#membership-distribution",
-    "href": "hobbies.html#membership-distribution",
-    "title": "SEMA Material",
-    "section": "",
-    "text": "Create Waitlist\n“Sign Up for launch”\nlaunch 100 first to ensure everything is working properly, then accept another 100 and so on and so on"
-  },
-  {
-    "objectID": "hobbies.html#marketing",
-    "href": "hobbies.html#marketing",
-    "title": "SEMA Material",
-    "section": "",
-    "text": "Use Wording\n” Limited” “5 left”\nTik Tok & Youtube Influencers\nMake it a benefits for body shops and automotive paint and supply industry ( a contract for memberships)\nlet B2b parnters in first\nOutline Benefits"
-  },
-  {
-    "objectID": "hobbies.html#key-marketing-metrics",
-    "href": "hobbies.html#key-marketing-metrics",
-    "title": "SEMA Material",
-    "section": "",
-    "text": "Cost per Acquisition (CPA)\nChannel-Specific Performance\nRenewal Rate\nEngagement Rate\nChurn Rate: Members who do not renew\nTotal Revenue\nSocial Media Engagement"
-  },
-  {
-    "objectID": "work_samples.html#project-2-cal-poly-pomona-brand-development-plan",
-    "href": "work_samples.html#project-2-cal-poly-pomona-brand-development-plan",
-    "title": "Work Samples",
-    "section": "Project 2: Cal Poly Pomona Brand Development Plan",
-    "text": "Project 2: Cal Poly Pomona Brand Development Plan\nView Full Report\n\nDescription\nA Brand Development plan for the Cal Poly Pomona farm store.\nDownload Project 2 Report (PDF)"
   },
   {
     "objectID": "SEMA_Material.html",
